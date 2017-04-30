@@ -1,0 +1,7 @@
+{
+    :database { :classname "org.h2.Driver"
+                :subprotocol "h2:file"
+                :subname "./resources/db/rest-service"
+                :user ""
+                :password "" }
+}

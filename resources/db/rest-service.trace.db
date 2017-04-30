@@ -1,0 +1,9 @@
+2017-04-29 23:02:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLASSNAME" not found; SQL statement:
+INSERT INTO classname org.h2.Driver ( title, description ) VALUES ( ?, ? ) [42102-195]
+2017-04-29 23:02:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLASSNAME" not found; SQL statement:
+INSERT INTO classname org.h2.Driver ( title, description ) VALUES ( ?, ? ) [42102-195]
+2017-04-29 23:02:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CLASSNAME" not found; SQL statement:
+INSERT INTO classname org.h2.Driver ( title, description ) VALUES ( ?, ? ) [42102-195]
