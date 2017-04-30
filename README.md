@@ -22,3 +22,6 @@ java -jar target/server.jar
 ## License
 
 Copyright ©  FIXME
+=======
+# rest-service-example
+Example of REST service for Intro to Clojure
