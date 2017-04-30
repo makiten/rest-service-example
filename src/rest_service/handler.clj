@@ -1,37 +1,14 @@
 (ns rest-service.handler
   (:require [compojure.api.sweet :refer :all]
             [ring.util.http-response :refer :all]
-            [rest-service.routes.courses :refer [courses-routes]]
-            [schema.core :as s]))
-
-(s/defschema Pizza
-  {:name s/Str
-   (s/optional-key :description) s/Str
-   :size (s/enum :L :M :S)
-   :origin {:country (s/enum :FI :PO)
-            :city s/Str}})
+            [rest-service.routes.courses :refer [courses-routes]]))
 
 (def app
   (api
     {:swagger
      {:ui "/"
       :spec "/swagger.json"
-      :data {:info {:title "Rest-service"
-                    :description "Compojure Api example"}
+      :data {:info {:title "Intro to Clojure REST Service example"
+                    :description "A (very) simple REST service made in Clojure."}
              :tags [{:name "api", :description "some apis"}]}}}
-
-    courses-routes
-    (context "/api" []
-      :tags ["api"]
-
-      (GET "/plus" []
-        :return {:result Long}
-        :query-params [x :- Long, y :- Long]
-        :summary "adds two numbers together"
-        (ok {:result (+ x y)}))
-
-      (POST "/echo" []
-        :return Pizza
-        :body [pizza Pizza]
-        :summary "echoes a Pizza"
-        (ok pizza)))))
+    courses-routes))
