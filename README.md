@@ -1,6 +1,5 @@
-# rest-service
-
-FIXME
+# rest-service-example
+Example of REST service for Intro to Clojure
 
 ## Usage
 
@@ -21,7 +20,4 @@ java -jar target/server.jar
 
 ## License
 
-Copyright ©  FIXME
-=======
-# rest-service-example
-Example of REST service for Intro to Clojure
+Copyright ©2017
