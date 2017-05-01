@@ -131,3 +131,20 @@
 (type {})
 (type array-map)
 (type hash-map)
+(require '[clojure.java.jdbc :as jdbc]
+[clojure.string :as str])
+(require '[clojure.java.jdbc :as jdbc]
+[clojure.str :as str])
+(require '[clojure.java.jdbc :as jdbc]
+[clojure.core.string :as str])
+(require '[clojure.java.jdbc :as jdbc]
+'[clojure.core.string :as str])
+(require '[clojure.java.jdbc :as jdbc]
+'[clojure.string :as str])
+(type '[])
+(type [])
+'[clojure.string :only (join)])
+(require '[clojure.string :only (join)])
+(require '[clojure.string :only [join]])
+(require '[clojure.string :only [join split]])
+(require '[clojure.string :refer [join split]])
